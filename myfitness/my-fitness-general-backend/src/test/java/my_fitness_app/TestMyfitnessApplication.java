@@ -1,11 +1,12 @@
 package my_fitness_app;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class TestMyfitnessApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.from(MyfitnessApplication::main).with(TestcontainersConfiguration.class).run(args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(TestMyfitnessApplication.class, args);
+    }
 }
